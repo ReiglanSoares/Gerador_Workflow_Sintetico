@@ -20,6 +20,7 @@ Os modelos presentes neste repositório são destinados a experimentos em ambien
 
 Os modelos sintéticos disponibilizados neste repositório foram desenvolvidos a partir dos workflows reais disponíveis nos demais repositórios do meu perfil no GitHub, preservando sua estrutura e características de execução para fins de avaliação experimental.
 
-A geração dos DAGs foi realizada utilizando o **Parsl Pattern Workflow Builder**, desenvolvido por Rafael Terra, disponível em:
+A geração dos DAGs e das execuções sintéticas foi realizada utilizando o **Parsl Pattern Workflow Builder**, desenvolvido por **Rafael Terra**, disponível em:
 
 https://github.com/rafaelstjf/parsl-pattern-workflow-builder
+
