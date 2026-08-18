@@ -38,7 +38,7 @@ Construído utilizando o padrão **SingleTask**, com as tarefas e suas dependên
 Utiliza uma combinação dos padrões **SingleTask** e **MapReduce**. As tarefas de inicialização e finalização são representadas por **SingleTask**, enquanto as iterações são construídas utilizando o padrão **MapReduce**.
 
 <p align="center">
-  <img src="Modelos_DAG/kmeans_dag.png" width="850">
+  <img src="Modelos_DAG/kmeans_dag.png.jpg" width="850">
 </p>
 
 <p align="center">
