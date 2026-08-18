@@ -10,9 +10,22 @@ Os modelos presentes neste repositório são destinados a experimentos em ambien
 
 ## Estrutura do Repositório
 
-* **Modelos_DAG/** – Modelos utilizados para gerar os DAGs dos workflows sintéticos.
-* **Wordcount_Sintetico_Parsl/** – Implementação completa do workflow WordCount utilizando Parsl, incluindo scripts de execução.
-* **Wordcount_Sintetico_PyCOMPSs/** – Implementação completa do workflow WordCount utilizando PyCOMPSs, incluindo scripts de execução.
+O repositório está organizado de acordo com os benchmarks e os motores de workflow utilizados:
+
+* **Modelos_DAG/** – Contém os modelos utilizados para representar e gerar os DAGs dos workflows sintéticos.
+* **wordcount_sintetico_parsl/** e **wordcount_sintetico_pycompss/** – Implementações sintéticas do WordCount em Parsl e PyCOMPSs.
+* **kmeans_sintetico_parsl/** e **kmeans_sintetico_pycompss/** – Implementações sintéticas do KMeans em Parsl e PyCOMPSs.
+* **terasort_sintetico_parsl/** e **terasort_sintetico_pycompss/** – Implementações sintéticas do TeraSort em Parsl e PyCOMPSs.
+
+## Padrões Utilizados
+
+Os modelos dos DAGs foram construídos utilizando os padrões disponibilizados pelo **Parsl Pattern Workflow Builder**, combinados de acordo com a estrutura necessária para cada workflow sintético.
+
+* **WordCount** – construído utilizando o padrão **SingleTask**, com as tarefas e suas dependências definidas individualmente para representar a estrutura completa do workflow sintético.
+* **KMeans** – utiliza uma combinação dos padrões **SingleTask** e **MapReduce**. As tarefas de inicialização e finalização são representadas por **SingleTask**, enquanto as iterações são construídas utilizando o padrão **MapReduce**.
+* **TeraSort** – construído utilizando o padrão **MapReduce**, com quatro padrões iniciais conectados a um padrão **MapReduce** final.
+
+Os códigos utilizados para a construção desses DAGs estão disponíveis no diretório **Modelos_DAG/**.
 
 > Novos benchmarks e implementações serão adicionados conforme o desenvolvimento do projeto.
 
@@ -23,4 +36,5 @@ Os modelos sintéticos disponibilizados neste repositório foram desenvolvidos a
 A geração dos DAGs e das execuções sintéticas foi realizada utilizando o **Parsl Pattern Workflow Builder**, desenvolvido por **Rafael Terra**, disponível em:
 
 https://github.com/rafaelstjf/parsl-pattern-workflow-builder
+
 
