@@ -26,7 +26,7 @@ Os modelos dos DAGs foram construídos utilizando os padrões disponibilizados p
 Construído utilizando o padrão **SingleTask**, com as tarefas e suas dependências definidas individualmente para representar a estrutura completa do workflow sintético.
 
 <p align="center">
-  <img src="Modelos_DAG/wordcount_dag.jpg" width="850">
+  <img src="Modelos_DAG/wordcount_dag.png" width="850">
 </p>
 
 <p align="center">
